@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="storage-listener" />
+        <module name="pattern-listener" />
+        <module name="reward-listener" />
+        <module name="order-api" />
+        <module name="order-kafka-stream" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order-api" target="11" />
+      <module name="order-kafka-stream" target="11" />
+      <module name="pattern-listener" target="11" />
+      <module name="reward-listener" target="11" />
+      <module name="storage-listener" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order-api" options="-parameters" />
+      <module name="order-kafka-stream" options="-parameters" />
+      <module name="pattern-listener" options="-parameters" />
+      <module name="reward-listener" options="-parameters" />
+      <module name="storage-listener" options="-parameters" />
+    </option>
+  </component>
+</project>

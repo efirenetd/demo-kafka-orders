@@ -1,0 +1,17 @@
+{
+  "orderNumber": "0001",
+  "location": "Trinoma",
+  "creditCardNumber": "1111111111",
+  "items": [
+    {
+      "itemName": "Cafe Americano",
+      "quantity": 1,
+      "price": 5.50
+    },
+    {
+      "itemName": "Ham and cheese Croissant",
+      "quantity": 1,
+      "price": 3.24
+    }
+  ]
+}

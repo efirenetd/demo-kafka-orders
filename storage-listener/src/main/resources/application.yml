@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 9003
+
+---
+spring:
+  profiles: local
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      #group-id: group3
+      #key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer

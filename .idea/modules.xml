@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/demo-kafka-orders.iml" filepath="$PROJECT_DIR$/.idea/demo-kafka-orders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-api/order-api.iml" filepath="$PROJECT_DIR$/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-kafka-stream/order-kafka-stream.iml" filepath="$PROJECT_DIR$/order-kafka-stream/order-kafka-stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pattern-listener/pattern-listener.iml" filepath="$PROJECT_DIR$/pattern-listener/pattern-listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reward-listener/reward-listener.iml" filepath="$PROJECT_DIR$/reward-listener/reward-listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storage-listener/storage-listener.iml" filepath="$PROJECT_DIR$/storage-listener/storage-listener.iml" />
+    </modules>
+  </component>
+</project>

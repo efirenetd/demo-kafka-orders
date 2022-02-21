@@ -1,0 +1,26 @@
+{
+  "location": "Ayala Land",
+  "creditCardNumber": "23889283888899992",
+  "items": [
+    {
+      "itemName": "Cotton Dog",
+      "price": 80,
+      "quantity": 250
+    },
+    {
+      "itemName": "Plastic Cat",
+      "price": 400,
+      "quantity": 500
+    },
+    {
+      "itemName": "Wooden Horse",
+      "price": 700,
+      "quantity": 90
+    },
+    {
+      "itemName": "Steel Pig",
+      "price": 350,
+      "quantity": 270
+    }
+  ]
+}

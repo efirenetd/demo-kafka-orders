@@ -1,0 +1,68 @@
+spring:
+  profiles:
+    active: local
+
+server:
+  port: 9001
+
+---
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:h2:mem:kafkaorderdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+  kafka:
+    producer:
+      bootstrap-servers:
+        - localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        acks: all
+        retries: 3
+        retry.backoff.ms: 20
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group.order.reply
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+app:
+  name: Order REST API
+  api:
+    title: Order REST API
+    version: 1.0.0
+    description: Order API
+    base-package: org.efire.net.api
+    contact-name: eFireNet
+    contact-email: efirenetd@gmail.com
+
+---
+spring:
+  profiles: prod
+  kafka:
+    producer:
+      bootstrap-servers:
+        - localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        acks: all
+        retries: 3
+        retry.backoff.ms: 20
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group.order.reply
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#Below config to disable documentation using Swagger 3
+springfox:
+  documentation:
+    enabled: false

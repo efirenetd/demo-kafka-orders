@@ -1,0 +1,11 @@
+{
+  "location": "Croatia",
+  "creditCardNumber": "23889283888787832396",
+  "items": [
+    {
+      "itemName": "Americano",
+      "price": 12,
+      "quantity": 640
+    }
+  ]
+}
